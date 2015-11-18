@@ -6,39 +6,19 @@ namespace eToolsSystem.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Vendor
+    public partial class Category
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Vendor()
+        public Category()
         {
             StockItems = new HashSet<StockItem>();
         }
 
-        public int VendorID { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string VendorName { get; set; }
-
-        [Required]
-        [StringLength(12)]
-        public string Phone { get; set; }
-
-        [Required]
-        [StringLength(30)]
-        public string Address { get; set; }
+        public int CategoryID { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string City { get; set; }
-
-        [Required]
-        [StringLength(2)]
-        public string ProvinceCode { get; set; }
-
-        [Required]
-        [StringLength(6)]
-        public string PostalCode { get; set; }
+        public string Description { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<StockItem> StockItems { get; set; }
