@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AdminController.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\C__RefactorLog.cs" />
     <Compile Include="Entities\Employee.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="DAL\" />
     <Folder Include="Entities\DTOs\" />
     <Folder Include="Entities\POCOs\" />
