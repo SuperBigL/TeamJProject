@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\AdminController.cs" />
+    <Compile Include="BLL\SalesController.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\C__RefactorLog.cs" />
     <Compile Include="Entities\Employee.cs" />
@@ -64,6 +64,7 @@
     <Compile Include="Entities\ShoppingCartItem.cs" />
     <Compile Include="Entities\StockItem.cs" />
     <Compile Include="Entities\Vendor.cs" />
+    <Compile Include="eToolsSystemContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
